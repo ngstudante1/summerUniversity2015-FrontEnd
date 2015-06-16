@@ -1,0 +1,54 @@
+.material-detail {
+                  
+    .description {
+        margin-bottom: 30px; border-right: 1px solid #DDD;
+                  
+        .category {
+            padding-bottom: 15px;
+            
+            .separator {
+                display: inline-block; padding: 0 10px
+            }
+        }
+    
+        .heading {
+            padding-bottom: 15px;
+            
+            h1 {
+                margin: 0; padding: 0
+            }
+        };
+        .authors {
+            padding-bottom: 15px;
+            
+            a {
+                display: inline-block; margin-right: 15px
+            }
+
+            span {
+                display: inline-block; padding-right: 15px;
+            }
+        }
+
+        
+    }
+    
+    .dl-horizontal {
+        dt {
+            width: 90px; font-weight: normal
+        };
+        dd {
+            margin-left: 100px
+        }
+    };
+    .preview {
+        @include border-radius(3px); @include box-shadow(0, 0, 2px, 0, #999); background: #FFF; overflow: hidden; 
+        
+        header {
+            padding: 20px 40px; background: #F4F4F4
+        }; 
+        article {
+            padding: 45px 40px
+        }
+    }
+}

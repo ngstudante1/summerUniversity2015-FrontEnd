@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 material-detail">
+            <div class="row">
+                <div class="col-md-9 description">
+                    <div class="category text-grey">
+                       <span data-translate="SUBJECT"></span>
+                       <span>: </span>Biology 
+                       <span class="separator">|</span>
+                       <span data-translate="TYPE"></span>
+                       <span>: </span><span data-translate="{{material.resourceTypes[0].name.toUpperCase()}}"></span>
+                       <span class="separator">|</span>
+                       <span data-translate="EDUCATIONAL_CONTEXT"></span>
+                       <span>: </span>12-15
+                    </div>
+                    <div class="heading">
+                        <h1 ng-bind="getCorrectLanguageString(material.title)"></h1>
+                    </div>
+                    <div class="authors">
+                        <span data-ng-repeat="author in material.authors" >
+                            <a href="#"><span ng-bind="author.name"></span><span ng-bind="author.surname"></span></a>
+                        </span>
+                    </div>
+                    
+                    <div ng-bind="getCorrectLanguageString(material.descriptions)" class="description"></div>
+
+                </div>
+                <div class="col-md-3">
+                    <dl class="dl-horizontal">
+                        <dt class="text-grey">
+                            <span data-translate="UPDATED"></span><span>:</span>
+                        </dt>
+                        <dd class="text-right">
+                            14.05.2015
+                        </dd>
+                        <dt class="text-grey">
+                           <span data-translate="ADDED"></span><span>:</span>
+                        </dt>
+                        <dd class="text-right text-grey">
+                            14.05.2015
+                        </dd>
+                        <dt class="text-grey">
+                            <span data-translate="CREATED"></span><span>:</span>
+                        </dt>
+                        <dd class="text-right text-grey">
+                            22.02.2015
+                        </dd>
+                    </dl>
+                    
+                    <div class="text-right"><span data-translate="REPOSITORY_NUMBER"></span> Five</div>
+                    <div class="text-right text-grey"><small>Repository</small></div>
+                    <div class="text-right" data-translate="ALL_RIGHTS_RESERVED">All rights reserved</div>
+                    <div class="text-right text-grey"><small>Licence</small></div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="preview">
+                        <header>
+                            
+                        </header>
+                        <article>
+                            <img src="img/material-video-preview.jpg">
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
