@@ -1,4 +1,4 @@
-# Tools
+# Tools 
 
 To build the project you need to have installed on your machine NodeJS, NPM, Bower, Grunt, Ruby and SASS.
 
